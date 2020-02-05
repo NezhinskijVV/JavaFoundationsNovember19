@@ -24,7 +24,7 @@ public class Man {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Man man = (Man) o;
-        return Double.compare(man.age, age) == 0 &&
+        return  Double.compare(man.age, age) == 0 &&
                 Double.compare(man.height, height) == 0 &&
                 Double.compare(man.weight, weight) == 0 &&
                 Objects.equals(name, man.name) &&
@@ -33,6 +33,6 @@ public class Man {
 
     @Override
     public int hashCode() {
-        return (int) (Math.random() * 10000);
+        return (int) (Math.random() * 10_000);
     }
 }

@@ -1,11 +1,12 @@
 package oop.practice;
 
-public class Figure {
+public abstract class Figure {
 
-    public double calcSquare() {
-        System.out.println("Площадь не может быть посчитана");
-        return -1.0;
-    }
+    public abstract double calcSquare();
+//    {
+//        System.out.println("Площадь не может быть посчитана");
+//        return -1.0;
+//    }
 
     public double calcPerimeter() {
         System.out.println("Площадь не может быть посчитана");
