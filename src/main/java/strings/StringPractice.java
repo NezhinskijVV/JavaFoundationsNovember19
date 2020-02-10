@@ -6,6 +6,32 @@ public class StringPractice {
         System.out.println(str.substring(2));
         System.out.println("str.equalsIgnoreCase(\"Я замечательная строкА\") = " + str.equalsIgnoreCase("Я замечательная строкА"));
         System.out.println(str);
+        str.equals("");
+
+        //пул строк
+        String str2 = "Я замечательная строка";
+        System.out.println(str == str2);
+
+        //создание явно строки вне пула
+        String str3 = new String("Я замечательная строка");
+        System.out.println(str == str3);
+
+        str3 = str3.intern();
+        System.out.println(str == str3);
+
+        String bad = "Bad";
+        for (int i = 0; i < 100000; i++) {
+            bad = bad + i;
+        }
+        System.out.println(bad);
+
+        StringBuilder goodBuilder = new StringBuilder("Good");
+        for (int i = 0; i < 100000; i++) {
+            goodBuilder.append(i);
+        }
+        System.out.println(goodBuilder.toString());
+
+        StringBuffer stringBuffer = new StringBuffer();
     }
 }
 
