@@ -13,8 +13,8 @@ public class MyArrayList<T> {
     }
 
     public MyArrayList(int length) {
-        size = 0;
         array = new Object[length];
+        size = 0;
     }
 
     public int size() {
@@ -38,7 +38,7 @@ public class MyArrayList<T> {
         return Arrays.copyOf(array, size);
     }
 
-    public boolean add(Object o) {
+    public boolean add(T o) {
         if (array.length == size) {
             Object[] tempArray = new Object[(3 * array.length / 2) + 1];
             for (int i = 0; i < array.length; i++) {
@@ -61,11 +61,11 @@ public class MyArrayList<T> {
         return resStrBuilder.toString();
     }
 
-    public boolean remove(Object o) {
+    public boolean remove(T o) {
         return false;
     }
 
-    public boolean addAll(Collection c) {
+    public boolean addAll(Collection<T> c) {
         return false;
     }
 

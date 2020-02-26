@@ -18,6 +18,10 @@ public class Man {
         this.telephone = telephone;
     }
 
+    public Man(String name) {
+        this.name = name;
+    }
+
     //man1.equals(man2)
     @Override
     public boolean equals(Object o) {
@@ -34,5 +38,12 @@ public class Man {
     @Override
     public int hashCode() {
         return (int) (Math.random() * 10_000);
+    }
+
+    @Override
+    public String toString() {
+        return "Man{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

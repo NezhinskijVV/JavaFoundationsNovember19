@@ -16,7 +16,7 @@ public class Cake {
 
     @Override
     public String toString() {
-        return "Название: '" + name + "' Вес: " + weight + "кг";
+        return "'" + name + "' : " + weight + "кг";
     }
 
     public void setName(String name) {
