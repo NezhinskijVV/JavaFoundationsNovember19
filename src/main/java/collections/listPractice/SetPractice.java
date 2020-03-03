@@ -35,8 +35,5 @@ public class SetPractice {
         for (Map.Entry<String, Man> mapElement : myMap.entrySet()){
             System.out.println(mapElement.getKey());
         }
-
-
-
     }
 }
